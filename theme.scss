@@ -1,0 +1,119 @@
+// Options
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Wendy+One&display=swap');
+
+// Quickly modify global styling by enabling or disabling optional features.
+  
+$enable-rounded:            true !default;
+$enable-shadows:            true;
+$enable-transitions:        true;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       true;
+
+// Variables
+//
+// Colors
+
+$theme-colors: (
+  primary: #ffb81c,
+  secondary: #003057,
+  light: #f3f3f3,
+  dark: #666666,
+  info: #ccc,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+$body-bg: white;
+$body-color: #666666;
+
+
+$body-color-inverse: invert($body-color) !default;
+$link-color: #666666;
+
+// Fonts
+$font-family-base: 'Open Sans', sans-serif;
+$headings-font-family: 'Wendy One', sans-serif;
+$display-font-family:	$headings-font-family;
+
+$headings-font-family: $font-family-base;
+$display-font-family: $font-family-base;
+$font-weight-normal: 400;
+$headings-font-weight: $font-weight-normal;
+$lead-font-size:   1rem;
+
+$spacer: 1.5rem;
+$font-weight-light: 300;
+$font-weight-bold: 700;
+$font-size-base: 1rem;
+
+
+$enable-responsive-font-sizes: true;
+
+/*@import 'bootstrap-4.3.1';*/
+
+/* MNDRN */
+.pearson-nav a { color: #003057 !important; font-size:15px; }
+.col-verde { background: #12b2a6;  background-image: url('img/trama.png');}
+.heading-pearson { font-family: 'Wendy One', sans-serif; }
+.despertando-emociones { font-size: 73px; line-height: 0.93; }
+.despertando-emociones span, .subtit span {  color: #ffb81c; }
+.subtit { font-size: 18px;  }
+.wForm .inline div.oneField { width: 50%; float: left; } 
+.wForm .inputWrapper { width: 100%; }
+
+.form-amigable .wFormContainer .wForm .inputWrapper { width: 100%; }
+.form-amigable .wFormContainer .wForm { background: transparent !important; color: #706e6b; border: none; border-radius: 0; padding: 0 !important; box-shadow: none; margin-top: 0; max-width: 582px; margin: auto; }
+.form-amigable .wFormContainer .wForm form { padding: 0; } 
+.form-amigable .wFormContainer .label.preField,.form-amigable .oneField .label span { color: #fff !important; font-size: 12px !important; }
+.form-amigable .wForm :link { color: #fff !important;  }
+.form-amigable .wFormContainer .actions .primaryAction { background-color: #fff !important; color: #1bb5a9 !important; text-transform: uppercase; padding: 10px 25px; letter-spacing: 1.4px; border-radius: 0; }
+.tit-seccion {  font-size: 30px; }
+.salmon { color: #ff6600; }
+.height-section { min-height: 430px; width: 100%; margin: 0; }
+.benefician-tit { color: #ff6600; text-transform: uppercase; font-family: 'Open Sans', sans-serif; font-size: 16px;letter-spacing: 1.4px; }
+.benefician-txt { font-size: 13px;  }
+
+@media (min-width: 992px){
+.benefician-row .col-lg-3 { flex: 0 0 23%; max-width: 23%; } 
+}
+@media (max-width: 991px){
+.benefician-row .col-md-6 { flex: 0 0 47%; max-width: 47% !important; } 
+.benefician-row .col-md-6 { margin-bottom: 25px; }
+}
+@media (min-width: 767px)and(max-width: 995px){
+.pearson-nav .pr-5 { padding-right: 10px !important; } 
+}
+@media (max-width: 767px){
+.col-img { min-height: 300px; }  
+}
+@media (max-width: 480px){
+.benefician-row .col-md-6 { flex: 0 0 85%; max-width: 85% !important; }   
+.p-5 { padding: 50px 1.5rem !important;  }  
+.col-verde { padding: 50px 1.5rem !important; }  
+.despertando-emociones { font-size: 37px !important; }
+.subtit { font-size: 16px !important;  }  
+.form-amigable .oneField { width: 100% !important; }
+#tfa_7-D, *[id^="tfa_7["][class~="field-container-D"], #tfa_9-D, *[id^="tfa_9["][class~="field-container-D"] { width: 100% !important; }
+}
+
+html { scroll-behavior: smooth; }
+
+.footer-pearson { background-image: linear-gradient(to bottom, #003057, #003057);	background-position: top left; background-size: 100%;	background-repeat: repeat; }
+.footer-pearson a { font-size: 13px; }
+.footer-pearson a:hover { text-decoration: none; }
+.tit-footer { color: #007da1; letters-spacing: 1.4px;  font-weight: 600; font-size: 14px; }
+
+@media (max-width: 1000px){
+.social-footer { justify-content: flex-start !important; }
+.despertando-emociones { font-size: 55px;  }
+.footer-pearson .img-fluid  { margin: auto; margin-bottom: 25px; }  
+.social-footer { justify-content: center !important; }
+}
+@media (max-width: 480px){
+.footer-pearson .col-12 { text-align: center; padding-top: 0 !important; }  
+.wFormContainer .wForm .inputWrapper input[type='text'], .wFormContainer .wForm .inputWrapper input[type='password'], .wFormContainer .wForm .inputWrapper select, .wFormContainer .wForm .inputWrapper textarea { width: 100% !important; }  
+.wForm .actions { text-align: center !important; }
+}
